@@ -14,7 +14,7 @@ class TweetSpecTest extends Specification {
     "should make it available for search" in new WithApplication {
        val tweet = new Tweet;
        tweet.id = 1;
-       tweet.message = "message"
+       tweet.text = "text"
        tweet.user = "user"
        tweet.time = new Date
        tweet.save()

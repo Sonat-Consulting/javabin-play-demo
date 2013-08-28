@@ -1,0 +1,9 @@
+@(title: String, statuses: List[Tweet])
+@main(title) {
+<h1>@title</h1>
+<ul>
+@for(status <- statuses) {
+    <li>@status.text (by @status.user)</li>
+}
+</ul>
+}
